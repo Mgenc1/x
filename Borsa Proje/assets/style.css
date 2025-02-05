@@ -1,0 +1,131 @@
+/* Ana tema renkleri */
+:root {
+    --bg-primary: #1e222d;
+    --bg-secondary: #2a2e39;
+    --border-color: #363c4e;
+    --text-primary: #e1e1e1;
+    --text-secondary: #787b86;
+}
+
+/* Temel stiller */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: var(--bg-secondary);
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+/* Ana içerik */
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sol panel */
+.left-panel {
+    width: 300px;
+    background-color: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.market-selector {
+    margin-bottom: 20px;
+}
+
+.market-info {
+    padding: 15px 0;
+}
+
+.market-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-label {
+    color: var(--text-secondary);
+}
+
+.info-value {
+    font-weight: 500;
+}
+
+/* Grafik paneli */
+.chart-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Grafik kontrolleri */
+.chart-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/* Zaman butonları */
+.time-button, .chart-type-button {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.time-button:hover, .chart-type-button:hover {
+    background-color: var(--border-color);
+}
+
+.time-button.active, .chart-type-button.active {
+    background-color: var(--border-color);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Dropdown stilleri */
+.Select-control {
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.Select-menu-outer {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.Select-option:hover {
+    background-color: var(--border-color) !important;
+}
+
+.Select-value-label {
+    color: var(--text-primary) !important;
+} 
